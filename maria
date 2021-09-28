@@ -1,0 +1,15 @@
+import stdio
+import sys
+
+# Accept three integers x (int), y (int), and z (int) as command-line arguments.
+x = int(sys.argv[1])
+y = int(sys.argv[2])
+z = int(sys.argv[3])
+min = min(x, y, z)
+max = max(x, y, z)
+middle = x + y + z - min - max
+
+# Write the numbers in ascending order, separated by a space to standard output.
+stdio.writeln(min)
+stdio.writeln(middle)
+stdio.writeln(max)
